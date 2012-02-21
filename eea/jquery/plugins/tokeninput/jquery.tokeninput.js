@@ -432,7 +432,7 @@ $.TokenList = function (input, url_or_data, settings) {
                 var currToken = $(this).data("tokeninput");
                 var match = true;
                 for (var prop in item) {
-                    if (item[prop] !== currToken[prop]) {
+                    if (item[prop] != currToken[prop]) {
                         match = false;
                         break;
                     }
